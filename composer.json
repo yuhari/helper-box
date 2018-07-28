@@ -1,0 +1,17 @@
+{
+    "name": "yuhari/box",
+    "description": "some tools that assist you, such as file reader, sql clause builder ...",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yuhari",
+            "email": "yuhari@126.com"
+        }
+    ],
+	"autoload":{
+		"psr-4" :{
+			"box\\" : "src"
+		}
+	},
+    "require": {}
+}
