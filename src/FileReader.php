@@ -22,11 +22,11 @@ class FileReader {
 	private $readInstance ;
 	
 	public function __construct($file, $mode='r') {
-		if ($file instanceof SplFileObject) {
+		if ($file instanceof \SplFileObject) {
 			$this->readInstance = $file ;
 		}else {
 			$this->filePath = $file ;
-			$this->readInstance = new SplFileObject($file, $mode) ;
+			$this->readInstance = new \SplFileObject($file, $mode) ;
 		}
 	}
 	
