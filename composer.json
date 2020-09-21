@@ -13,5 +13,8 @@
 			"box\\" : "src"
 		}
 	},
-    "require": {}
+    "require": {
+    	"guzzlehttp/guzzle" : "^6.3",
+        "google/protobuf": "^3.9"
+    }
 }

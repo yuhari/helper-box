@@ -1,0 +1,16 @@
+syntax = "proto3" ;
+
+package data ;
+
+message TaskProgress {
+    message Record {
+        string tag = 1 ; // 资源标签
+        string url = 2 ; // 资源链接
+        string saveDir = 3 ; // 资源存储目录
+        string saveName = 4 ; // 资源存储名
+        int64  cursor = 5; // 资源下载起始定位
+        int32  flag = 6;   // 当前任务的状态
+        int64  size = 7;  // 资源体积
+    }
+    repeated Record records = 8;
+}
